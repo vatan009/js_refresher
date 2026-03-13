@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Vanilla JS Project</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        color: #0066cc;
+      }
+      .tabs {
+        margin-bottom: 10px;
+      }
+      .tab-button {
+        padding: 10px 20px;
+        margin-right: 5px;
+        border: none;
+        background-color: #ddd;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      .tab-button:hover {
+        background-color: #ccc;
+      }
+      .tab-content {
+        background-color: #fff;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      #btn {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #0066cc;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      #btn:hover {
+        background-color: #005bb5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, Vanilla JS!</h1>
+    <div class="tabs">
+      <button class="tab-button" data-tab="js">JavaScript</button>
+      <button class="tab-button" data-tab="react">Why React?</button>
+    </div>
+    <div id="js" class="tab-content">
+      <h2>Core JS Features</h2>
+      <ul>
+        <li>Lightweight, fast execution</li>
+        <li>No build step required</li>
+        <li>Runs in any browser</li>
+        <li>Great for simple UIs and small scripts</li>
+      </ul>
+    </div>
+    <div id="react" class="tab-content" style="display: none">
+      <h2>Why React?</h2>
+      <ul>
+        <li>Component-based architecture</li>
+        <li>Virtual DOM for high performance</li>
+        <li>Reusable UI elements</li>
+        <li>Huge ecosystem and community support</li>
+      </ul>
+    </div>
+    <button id="btn">Click me</button>
+
+    <script src="main.js"></script>
+  </body>
+</html>
