@@ -1,8 +1,3 @@
-
-
-
-
-
 export default (username,message)=>{
   return 1;
 }
